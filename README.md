@@ -1,13 +1,45 @@
-# Sample Hardhat Project
+# **Secure_Buy**
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## **Table Of Contents**
 
-Try running some of the following tasks:
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#Setup)
+* [Launch](#Launch)
+* [Features](#features)
+* [Inspiration](#inspiration)
+* [Contributors](#contributors)
+* [Status](#status)
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+## General info
+This project is to show how an escrow smart contract works
+
+## Setup 
+To run this project, install it locally using
 ```
+$  npm install
+
+```
+
+## Launch 
+To Launch this project
+```
+$  npm run dev
+```
+## Features
+* Make speedy transactions that are trust minimized.
+* Automate the execution of transactions speedily.
+* Authenticity of  Transfer of funds.
+* Timer to automate transfer of funds if dispute arises.
+
+## Contributors
+
+* github.com/olaoyesalem.com
+<br>  olaoyesalemgreat@gmail.com
+
+## Status
+This project is still under development
+
+
+
+
