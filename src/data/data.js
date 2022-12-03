@@ -23,7 +23,7 @@ export const nav = [
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/products' },
     { name: 'About', href: '/' },
-    // { name: 'Feedback', href: '/' },
+    { name: 'Add Product', href: '/add_product' },
   ];
 
   export const hero = {
