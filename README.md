@@ -12,7 +12,14 @@
 * [Status](#status)
 
 ## General info
-This project is to show how an escrow smart contract works
+Ecommerce app that runs on polygon and makes use of escrow contract to safe guard buyers money pending when the product has been delivered
+
+## Technologies
+* React
+* web3.js
+* Solidity
+* Javascript
+* HTML
 
 ## Setup 
 To run this project, install it locally using
@@ -36,6 +43,8 @@ $  npm run dev
 
 * github.com/olaoyesalem.com
 <br>  olaoyesalemgreat@gmail.com
+*github.com/izik4004.com
+
 
 ## Status
 This project is still under development
