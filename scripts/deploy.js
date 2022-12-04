@@ -5,8 +5,11 @@ const fs = require("fs");
 async function main() {
   const [deployer] = await ethers.getSigners();
   const balance = await deployer.getBalance();
-  const SecureBuy = await hre.ethers.getContractFactory("NFTMarketplace");
+  const SecureBuy = await hre.ethers.getContractFactory("SecureBuy");
   const securebuy = await SecureBuy.deploy();
+
+  // const Me = await hre.ethers.getContractFactory("Me")
+  // const me = await me.deploy();
 
   await securebuy.deployed();
 

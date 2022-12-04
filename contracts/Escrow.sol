@@ -1,5 +1,5 @@
 //SPDX-License-Identifier:MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.9;
 contract Escrow{
     address  public buyer;
     address public seller;

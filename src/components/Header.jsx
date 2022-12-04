@@ -64,7 +64,10 @@ const Header = ({ CartItem }) => {
           </div>
 
           <div className="flex items-center gap-4">
-            <ConnectButton />
+            <ConnectButton 
+            accountStatus="avatar"
+            chainStatus="icon" 
+            />
             <div
               className=" cursor-pointer bg-gray-100 p-2 rounded-full"
               // ref={ref}
