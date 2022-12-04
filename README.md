@@ -44,6 +44,7 @@ $  npm run dev
 * github.com/olaoyesalem.com
 <br>  olaoyesalemgreat@gmail.com
 *github.com/izik4004.com
+<br> izik4004@gmail.com
 
 
 ## Status
