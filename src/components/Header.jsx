@@ -9,11 +9,18 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Cart from "./Cart";
 import useClickOutside from "../hooks/useClickOutside";
 
+
 const Header = ({ CartItem }) => {
   const [mobileNav, setMobileNav] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const { logo, btnText } = header;
   const [cartOpen, setCartOpen] = useState(false);
+  // const dispatch = useDispatch()
+
+  const onCartToggle = () => {
+    
+  }
+
 
   //scroll event
   useEffect(() => {
@@ -36,15 +43,15 @@ const Header = ({ CartItem }) => {
 
   return (
     <>
-      {cartOpen && <Cart cartOpen={cartOpen} setCartOpen={setCartOpen} />}
+      {cartOpen && <Cart handleClick={handleClick} cartOpen={cartOpen} setCartOpen={setCartOpen} />}
       <header
-        className="container mx-auto sticky top-0 bg-white shadow-base z-10 py-4"
-  //       className={`${
-  //         isActive ? "lg:top-0 bg-white shadow-2xl" : "lg;top-[60px] "
-  //       }  py-4 fixed w-full bg-white
-  // transition-all z-10`}
+        // className="sticky top-0 bg-white shadow-md z-10 py-4"
+        className={`${
+          isActive ? "lg:top-0 bg-white shadow-2xl" : "lg;top-[60px] "
+        }  py-4 fixed w-full bg-white
+  transition-all z-10`}
       >
-        <div className="flex justify-between items-center ">
+        <div className=" lg:mx-20 flex px-2 lg:px-0 justify-between items-center ">
           <a
             href="/"
             data-aos="fade-down"
@@ -64,10 +71,7 @@ const Header = ({ CartItem }) => {
           </div>
 
           <div className="flex items-center gap-4">
-            <ConnectButton 
-            accountStatus="avatar"
-            chainStatus="icon" 
-            />
+            <ConnectButton />
             <div
               className=" cursor-pointer bg-gray-100 p-2 rounded-full"
               // ref={ref}
@@ -75,7 +79,7 @@ const Header = ({ CartItem }) => {
             >
               <BsCart2 />
               {CartItem?.length > "0" ? (
-                <span className="bg-red-500 text-center text-xs absolute ml-3 top-3 rounded-full px-2 py-1  text-white">
+                <span className="bg-red-500 text-center font-medium absolute ml-3 top-3 rounded-full px-2 py-1 text-[0.65rem] leading-tight text-white hover:scale-110 cursor-pointer transition-all duration-300 shadow shadow-slate-700">
                   {CartItem?.length}
                 </span>
               ) : (

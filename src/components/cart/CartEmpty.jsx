@@ -2,7 +2,7 @@ import React from 'react'
 import empty from '../../assets/svg/empty.svg';
 import { FaLongArrowAltLeft } from "react-icons/fa";
 
-const CartEmpty = ({ handleClick }) => {
+const CartEmpty = ({ handleClick, setOpen }) => {
   return (
    <>
       <div className='flex items-center justify-center flex-col h-screen px-11 text-center gap-7'>
