@@ -31,7 +31,7 @@ $  npm install
 ## Launch 
 To Launch this project
 ```
-$  npm run dev
+$  npm start
 ```
 ## Features
 * Make speedy transactions that are trust minimized.
@@ -43,8 +43,12 @@ $  npm run dev
 
 * github.com/olaoyesalem.com
 <br>  olaoyesalemgreat@gmail.com
+
 *github.com/izik4004.com
 <br> izik4004@gmail.com
+
+* github.com/jheff4
+<br>  ogbevoenetinosa@gmail.com
 
 
 ## Status

@@ -8,6 +8,7 @@ import { publicProvider } from 'wagmi/providers/public';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { Toaster } from 'react-hot-toast';
 
 
 
@@ -35,6 +36,7 @@ root.render(
   <React.StrictMode>
   <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
+      <Toaster position='top-center' reverseOrder={false} />
         <App />
       </RainbowKitProvider>
     </WagmiConfig>
